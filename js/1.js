@@ -164,6 +164,28 @@ function findNumber(start, end, divisor) {
 }
 // console.log(findNumber(2, 6, 5))
 
-function getOrderQuantity(order) {return   order.length
+function getOrderQuantity(order) {return order.length
 }
-console.log(getOrderQuantity(["apple", "peach", "pear", "banana"]))
+// console.log(getOrderQuantity(["apple", "peach", "pear", "banana"]))
+// console.log (getOrderQuantity(["apple", "banana"]))
+
+function getLastElementMeta(array) {
+    const lastIndex = array.length - 1;
+    const lastElement = array[lastIndex];
+  return [lastIndex, lastElement]
+}
+// console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]))
+
+function getExtremeElements(array) { 
+    const lastIndex = array.length - 1;
+    return [array[0], array[lastIndex]];
+}
+// console.log(getExtremeElements([1, 2, 3, 4, 5]))
+// console.log(getExtremeElements(["Earth", "Mars", "Venus"]))
+// console.log(getExtremeElements(["apple", "peach", "pear", "banana"]))
+
+function getLength(array) {
+  return array.join("").length
+
+}
+// console.log(getLength(["Mango", "hurries", "to", "the", "train"]))
