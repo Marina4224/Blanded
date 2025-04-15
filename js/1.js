@@ -189,3 +189,75 @@ function getLength(array) {
 
 }
 // console.log(getLength(["Mango", "hurries", "to", "the", "train"]))
+
+function calculateEngravingPrice(message, pricePerWord) {
+  return message.split(" ").length * pricePerWord
+}
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10))
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 20))
+
+const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+const firstTwoEls = fruits.slice(0,2);
+const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+const lastThreeEls = fruits.slice(fruits.length - 3);
+// console.log(lastThreeEls)
+
+const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+const newClients = ["Peach", "Houston"];
+const allClients = oldClients.concat(newClients)
+// console.log(allClients)
+
+function getSlice(array, value) {
+  if (array.indexOf(value) === -1) {return[]
+     } 
+  else {return array.slice(0, array.indexOf(value) + 1)}
+  
+}
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Poly"))
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Casey"))
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  for (let i = min; i <= max; i++) {
+    numbers.push(i);
+    
+  }
+  return numbers
+}
+// console.log(createArrayOfNumbers(1, 3))
+
+function calculateTotalPrice(order) {
+  let sum = 0;
+  for (i = 0; i < order.length; i++) {
+    sum += order[i]
+
+  }
+  return sum
+}
+// console.log(calculateTotalPrice([12, 85, 37, 4]))
+
+function getEvenNumbers(start, end) {
+  const evenNum = [];
+  for (let index = start; index <= end; index++) {
+    if (index % 2 === 0) {
+      evenNum.push(index);
+    } }
+  return evenNum;
+    
+}
+// console.log(getEvenNumbers(2, 5))
+// console.log(getEvenNumbers(7, 7))
+
+function checkStorage(storage, item) {
+  const itemA = item.toLowerCase()
+  // const storageA = storage.toLowerCase()
+  if (storage.includes(itemA)) {
+    return `${itemA} is available to order!`
+  }
+  else {
+    return `Sorry! We are out of stock!`
+  }
+ }
+// console.log(checkStorage(["apple", "plum", "pear"], "plum"))
+// console.log(checkStorage(["apple", "plum", "pear"], "pEAr"))
