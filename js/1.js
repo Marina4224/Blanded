@@ -261,3 +261,40 @@ function checkStorage(storage, item) {
  }
 // console.log(checkStorage(["apple", "plum", "pear"], "plum"))
 // console.log(checkStorage(["apple", "plum", "pear"], "pEAr"))
+
+function getCommonElements(array1, array2) {
+  const commonElements = [];
+  for (let i = 0; i < array1.length; i++) {
+    const element = array1[i];
+    if (array2.includes(element)) {
+      commonElements.push(element);
+      }
+    }
+    return commonElements;
+    }
+
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+
+function calculateTotalPrice(order) { 
+  let calc = 0;
+  for (const part of order) {
+    calc += part;
+  }
+  return calc
+}
+
+// console.log(calculateTotalPrice([0]));
+
+function createReversedArray() {
+  const arg = Array.from(arguments)
+  return arg.toReversed(arguments)
+
+}
+// console.log(createReversedArray(412, 371, 94, 63, 176));
+
+function calculateTax(amount, taxRate = 0.2) { 
+ return amount * taxRate
+
+}
+// console.log(calculateTax(100, 0.1));
+
