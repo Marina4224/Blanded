@@ -563,3 +563,255 @@ function fillArray(min, max) {
 
 // }
 // console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26]));
+
+// function greet(name) {
+//   console.log(`Welcome ${name}!`);
+// }
+
+// function notify(name) {
+//   console.log(`Dear ${name}, your room will be ready in 30 minutes`);
+// }
+
+// function registerGuest(name, callback) {
+//   console.log(`Registering ${name}!`);
+//   callback(name);
+// }
+// registerGuest("Mango", greet);
+// registerGuest("Mango", notify);
+
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// function makeMessage(pizzaName, callback) {
+//   return callback(pizzaName);
+// }
+// console.log(makeMessage("Royal Grand", makePizza));
+
+
+
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}`);
+// });
+
+// makePizza("Ultracheese");
+
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(function (orderedItems) {
+//     totalPrice +=orderedItems
+//   });
+
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([164, 48, 291]));
+
+
+// function filterArray(numbers, value) {
+//   const numbersNew = [];
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       numbersNew.push(number) }
+//   }
+//   )
+//   return numbersNew
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+
+
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+
+// const changeEven = (numbers, value) => {
+//   const NewArrey = [];
+//   array.forEach(element => {if (element % 2 === 0){
+//     newArray.push(element + value)
+//   }});
+   
+//   return NewArrey
+// }
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+
+
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+// const planetsLengths = planets.map(planet => planet.length);
+// console.log(planetsLengths);
+
+
+//
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+
+// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+//   return acc + player.playtime / player.gamesPlayed;
+// }, 0);
+// console.log(totalAveragePlaytimePerGame);
+
+
+// const calculateTotalBalance = (users) => { return users.reduce((acc, user) => acc + user.balance, 0) };
+// console.log(calculateTotalBalance([
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]));
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     rating: 7.94,
+//   },
+//   {
+//     title: "Enemy of God",
+//     author: "Bernard Cornwell",
+//     rating: 8.67,
+//   },
+// ];
+
+// const sortedByAuthorName = books.toSorted((a, b) => a.author.localeCompare(b.author));
+
+// const sortedByReversedAuthorName = books.toSorted((a, b) => b.author.localeCompare(a.author));
+
+// const sortedByAscendingRating = books.toSorted((a, b) => a.rating - b.rating);
+
+// const sortedByDescentingRating = books.toSorted((a, b) => b.rating - a.rating);
+// console.log(sortedByAscendingRating);
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// const names = books
+//   .filter(book => book.rating > MIN_BOOK_RATING)
+//   .map(book => book.author)
+//   .toSorted()
+// console.log(names);
