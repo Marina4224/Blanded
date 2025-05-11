@@ -1,309 +1,309 @@
-function checkAge(age) {
-let checkAge = "You are an adult";
-  if (age <= 18) {
-    checkAge = undefined;
-  }
-  return checkAge;
-}
+// function checkAge(age) {
+// let checkAge = "You are an adult";
+//   if (age <= 18) {
+//     checkAge = undefined;
+//   }
+//   return checkAge;
+// }
 
 
-function checkStorage(available, ordered) {
-    if (available < ordered) {
-   return checkStorage = "Not enough goods in stock!";
-  } else {return checkStorage = "Order is processed, our manager will contact you"
+// function checkStorage(available, ordered) {
+//     if (available < ordered) {
+//    return checkStorage = "Not enough goods in stock!";
+//   } else {return checkStorage = "Order is processed, our manager will contact you"
     
-  }
-}
+//   }
+// }
 
 
-function checkStorage(available, ordered) {
-    if (ordered === 0) {return checkStorage = "There are no products in the order!";}
-   else if (available < ordered) {return checkStorage = "Your order is too large, there are not enough items in stock!";
-       }
-  else {return checkStorage = "The order is accepted, our manager will contact you";}
+// function checkStorage(available, ordered) {
+//     if (ordered === 0) {return checkStorage = "There are no products in the order!";}
+//    else if (available < ordered) {return checkStorage = "Your order is too large, there are not enough items in stock!";
+//        }
+//   else {return checkStorage = "The order is accepted, our manager will contact you";}
   
-}
-// console.log(checkStorage(70,100))
+// }
+// // console.log(checkStorage(70,100))
 
-function getSubscriptionPrice(type) {
-  switch(type) {
-    case `starter`: 
-     return "0";
-      break;
-    case `professional`:
-     return "20";
-      break;
-     case `organization`: 
-      return "50";
-      break; 
-    default:
-     return "Invalid subscription type!"; 
-  }
+// function getSubscriptionPrice(type) {
+//   switch(type) {
+//     case `starter`:
+//      return "0";
+//       break;
+//     case `professional`:
+//      return "20";
+//       break;
+//      case `organization`:
+//       return "50";
+//       break;
+//     default:
+//      return "Invalid subscription type!";
+//   }
  
-}
-// console.log(getSubscriptionPrice(`organization`));
+// }
+// // console.log(getSubscriptionPrice(`organization`));
 
-function isNumberInRange(start, end, number) 
-{if (number >= start && number <= end) {return true;
-  }
-else {return false;}
+// function isNumberInRange(start, end, number)
+// {if (number >= start && number <= end) {return true;
+//   }
+// else {return false;}
 
-}
-// console.log(isNumberInRange(10, 30, 17))
+// }
+// // console.log(isNumberInRange(10, 30, 17))
 
-function getSubstring(string, length) {
-  return string.slice(0, length);
-}
-// console.log(getSubstring("Hello world", 3))
+// function getSubstring(string, length) {
+//   return string.slice(0, length);
+// }
+// // console.log(getSubstring("Hello world", 3))
 
-function normalizeInput(input, to) 
-{
-  if (to === "upper") {return input.toLowerCase()
+// function normalizeInput(input, to)
+// {
+//   if (to === "upper") {return input.toLowerCase()
     
-  } else {return input.toUpperase
+//   } else {return input.toUpperase
     
-  }
-}
-// console.log(normalizeInput("This ISN'T SpaM", "lower"));
-function checkForName(fullName, firstName) {
-  return fullName.toLowerCase().includes(firstName.toLowerCase())
+//   }
+// }
+// // console.log(normalizeInput("This ISN'T SpaM", "lower"));
+// function checkForName(fullName, firstName) {
+//   return fullName.toLowerCase().includes(firstName.toLowerCase())
  
-}
-// console.log(checkForName("Jason Neis", "Jason"))
-// console.log(checkForName("Jason Neis", "jAsOn"))
+// }
+// // console.log(checkForName("Jason Neis", "Jason"))
+// // console.log(checkForName("Jason Neis", "jAsOn"))
 
-function getFileName(file) {
-  if (!file.indexOf(".")) {
-    return file.slice() ;
+// function getFileName(file) {
+//   if (!file.indexOf(".")) {
+//     return file.slice() ;
   
-} else {return file.slice(0, file.indexOf("."))
-}
+// } else {return file.slice(0, file.indexOf("."))
+// }
   
-}
-// console.log(getFileName("styles.css"));
-// console.log(getFileName("app"))
-// console.log(getFileName("index"))
+// }
+// // console.log(getFileName("styles.css"));
+// // console.log(getFileName("app"))
+// // console.log(getFileName("index"))
 
-function createFileName(name, ext) {
-  return `${name.trim()}.${ext}`
-}
-// console.log(createFileName(" order ", "txt"))
+// function createFileName(name, ext) {
+//   return `${name.trim()}.${ext}`
+// }
+// // console.log(createFileName(" order ", "txt"))
 
-function calculateTotal(number) {
-  let sum = 0;
-  for (let i = 1; i <= number; i += 1) {
-    sum += i;
-  }
-  return sum
-}
-// console.log(calculateTotal(7))
+// function calculateTotal(number) {
+//   let sum = 0;
+//   for (let i = 1; i <= number; i += 1) {
+//     sum += i;
+//   }
+//   return sum
+// }
+// // console.log(calculateTotal(7))
 
-function calculateEvenTotal(number) {
-  let sum = 0;
-  for (let i = 1; i <= number; i++){
+// function calculateEvenTotal(number) {
+//   let sum = 0;
+//   for (let i = 1; i <= number; i++){
     
-    if (i % 2 == 0) { sum += i };
+//     if (i % 2 == 0) { sum += i };
     
-  }
-  return sum;
+//   }
+//   return sum;
   
-}
-// console.log(calculateEvenTotal(18))
+// }
+// // console.log(calculateEvenTotal(18))
 
 
-function general(num) {
-  switch (num) {
-    case `1`:
-      return `зима`;
-      break;
-    case `2`:
-      return `весна`;
-      break;
-    case `3`:
-      return `літо`;
-      break;
-    case `4`:
-      return `осінь`;
-      break;
-    default:
-      return `Вибачте, але ви маєте ввести значення від 1 до 4 включно`
-  }
-}
-// console.log(general("4"))
+// function general(num) {
+//   switch (num) {
+//     case `1`:
+//       return `зима`;
+//       break;
+//     case `2`:
+//       return `весна`;
+//       break;
+//     case `3`:
+//       return `літо`;
+//       break;
+//     case `4`:
+//       return `осінь`;
+//       break;
+//     default:
+//       return `Вибачте, але ви маєте ввести значення від 1 до 4 включно`
+//   }
+// }
+// // console.log(general("4"))
 
 
-function min(a, b) {
-  if (typeof a !== 'number' || typeof b !== 'number')
- { return 'Not a number!'}
+// function min(a, b) {
+//   if (typeof a !== 'number' || typeof b !== 'number')
+//  { return 'Not a number!'}
         
-    return a < b ? a : b
+//     return a < b ? a : b
     
   
-}
-// console.log(min(12,15))
+// }
+// // console.log(min(12,15))
 
-const start = 17;
-const end = 25;
-let number;
-for (let index = start; index < end; index++) {
-  if (index % 5 === 0) {
-    number = index
-    break
+// const start = 17;
+// const end = 25;
+// let number;
+// for (let index = start; index < end; index++) {
+//   if (index % 5 === 0) {
+//     number = index
+//     break
   
-  }
+//   }
   
-}
-// console.log(number)
-function findNumber(start, end, divisor) {
-  for (let i = start; i < end; i++) {
-    if (i % divisor === 0) {
-      return i;
+// }
+// // console.log(number)
+// function findNumber(start, end, divisor) {
+//   for (let i = start; i < end; i++) {
+//     if (i % divisor === 0) {
+//       return i;
       
-    }
-  }
-}
-// console.log(findNumber(2, 6, 5))
+//     }
+//   }
+// }
+// // console.log(findNumber(2, 6, 5))
 
-function getOrderQuantity(order) {return order.length
-}
-// console.log(getOrderQuantity(["apple", "peach", "pear", "banana"]))
-// console.log (getOrderQuantity(["apple", "banana"]))
+// function getOrderQuantity(order) {return order.length
+// }
+// // console.log(getOrderQuantity(["apple", "peach", "pear", "banana"]))
+// // console.log (getOrderQuantity(["apple", "banana"]))
 
-function getLastElementMeta(array) {
-    const lastIndex = array.length - 1;
-    const lastElement = array[lastIndex];
-  return [lastIndex, lastElement]
-}
-// console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]))
+// function getLastElementMeta(array) {
+//     const lastIndex = array.length - 1;
+//     const lastElement = array[lastIndex];
+//   return [lastIndex, lastElement]
+// }
+// // console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]))
 
-function getExtremeElements(array) { 
-    const lastIndex = array.length - 1;
-    return [array[0], array[lastIndex]];
-}
-// console.log(getExtremeElements([1, 2, 3, 4, 5]))
-// console.log(getExtremeElements(["Earth", "Mars", "Venus"]))
-// console.log(getExtremeElements(["apple", "peach", "pear", "banana"]))
+// function getExtremeElements(array) {
+//     const lastIndex = array.length - 1;
+//     return [array[0], array[lastIndex]];
+// }
+// // console.log(getExtremeElements([1, 2, 3, 4, 5]))
+// // console.log(getExtremeElements(["Earth", "Mars", "Venus"]))
+// // console.log(getExtremeElements(["apple", "peach", "pear", "banana"]))
 
-function getLength(array) {
-  return array.join("").length
+// function getLength(array) {
+//   return array.join("").length
 
-}
-// console.log(getLength(["Mango", "hurries", "to", "the", "train"]))
+// }
+// // console.log(getLength(["Mango", "hurries", "to", "the", "train"]))
 
-function calculateEngravingPrice(message, pricePerWord) {
-  return message.split(" ").length * pricePerWord
-}
-// console.log(calculateEngravingPrice("JavaScript is in my blood", 10))
-// console.log(calculateEngravingPrice("JavaScript is in my blood", 20))
+// function calculateEngravingPrice(message, pricePerWord) {
+//   return message.split(" ").length * pricePerWord
+// }
+// // console.log(calculateEngravingPrice("JavaScript is in my blood", 10))
+// // console.log(calculateEngravingPrice("JavaScript is in my blood", 20))
 
-const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
 
-const firstTwoEls = fruits.slice(0,2);
-const nonExtremeEls = fruits.slice(1, fruits.length - 1);
-const lastThreeEls = fruits.slice(fruits.length - 3);
-// console.log(lastThreeEls)
+// const firstTwoEls = fruits.slice(0,2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(fruits.length - 3);
+// // console.log(lastThreeEls)
 
-const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
-const newClients = ["Peach", "Houston"];
-const allClients = oldClients.concat(newClients)
-// console.log(allClients)
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Peach", "Houston"];
+// const allClients = oldClients.concat(newClients)
+// // console.log(allClients)
 
-function getSlice(array, value) {
-  if (array.indexOf(value) === -1) {return[]
-     } 
-  else {return array.slice(0, array.indexOf(value) + 1)}
+// function getSlice(array, value) {
+//   if (array.indexOf(value) === -1) {return[]
+//      }
+//   else {return array.slice(0, array.indexOf(value) + 1)}
   
-}
-// console.log(getSlice(["Mango", "Poly", "Ajax"], "Poly"))
-// console.log(getSlice(["Mango", "Poly", "Ajax"], "Casey"))
+// }
+// // console.log(getSlice(["Mango", "Poly", "Ajax"], "Poly"))
+// // console.log(getSlice(["Mango", "Poly", "Ajax"], "Casey"))
 
-function createArrayOfNumbers(min, max) {
-  const numbers = [];
-  for (let i = min; i <= max; i++) {
-    numbers.push(i);
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   for (let i = min; i <= max; i++) {
+//     numbers.push(i);
     
-  }
-  return numbers
-}
-// console.log(createArrayOfNumbers(1, 3))
+//   }
+//   return numbers
+// }
+// // console.log(createArrayOfNumbers(1, 3))
 
-function calculateTotalPrice(order) {
-  let sum = 0;
-  for (i = 0; i < order.length; i++) {
-    sum += order[i]
+// function calculateTotalPrice(order) {
+//   let sum = 0;
+//   for (i = 0; i < order.length; i++) {
+//     sum += order[i]
 
-  }
-  return sum
-}
-// console.log(calculateTotalPrice([12, 85, 37, 4]))
+//   }
+//   return sum
+// }
+// // console.log(calculateTotalPrice([12, 85, 37, 4]))
 
-function getEvenNumbers(start, end) {
-  const evenNum = [];
-  for (let index = start; index <= end; index++) {
-    if (index % 2 === 0) {
-      evenNum.push(index);
-    } }
-  return evenNum;
+// function getEvenNumbers(start, end) {
+//   const evenNum = [];
+//   for (let index = start; index <= end; index++) {
+//     if (index % 2 === 0) {
+//       evenNum.push(index);
+//     } }
+//   return evenNum;
     
-}
-// console.log(getEvenNumbers(2, 5))
-// console.log(getEvenNumbers(7, 7))
+// }
+// // console.log(getEvenNumbers(2, 5))
+// // console.log(getEvenNumbers(7, 7))
 
-function checkStorage(storage, item) {
-  const itemA = item.toLowerCase()
-  // const storageA = storage.toLowerCase()
-  if (storage.includes(itemA)) {
-    return `${itemA} is available to order!`
-  }
-  else {
-    return `Sorry! We are out of stock!`
-  }
- }
-// console.log(checkStorage(["apple", "plum", "pear"], "plum"))
-// console.log(checkStorage(["apple", "plum", "pear"], "pEAr"))
+// function checkStorage(storage, item) {
+//   const itemA = item.toLowerCase()
+//   // const storageA = storage.toLowerCase()
+//   if (storage.includes(itemA)) {
+//     return `${itemA} is available to order!`
+//   }
+//   else {
+//     return `Sorry! We are out of stock!`
+//   }
+//  }
+// // console.log(checkStorage(["apple", "plum", "pear"], "plum"))
+// // console.log(checkStorage(["apple", "plum", "pear"], "pEAr"))
 
-function getCommonElements(array1, array2) {
-  const commonElements = [];
-  for (let i = 0; i < array1.length; i++) {
-    const element = array1[i];
-    if (array2.includes(element)) {
-      commonElements.push(element);
-      }
-    }
-    return commonElements;
-    }
+// function getCommonElements(array1, array2) {
+//   const commonElements = [];
+//   for (let i = 0; i < array1.length; i++) {
+//     const element = array1[i];
+//     if (array2.includes(element)) {
+//       commonElements.push(element);
+//       }
+//     }
+//     return commonElements;
+//     }
 
-// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// // console.log(getCommonElements([1, 2, 3], [2, 4]));
 
-function calculateTotalPrice(order) { 
-  let calc = 0;
-  for (const part of order) {
-    calc += part;
-  }
-  return calc
-}
+// function calculateTotalPrice(order) {
+//   let calc = 0;
+//   for (const part of order) {
+//     calc += part;
+//   }
+//   return calc
+// }
 
-// console.log(calculateTotalPrice([0]));
+// // console.log(calculateTotalPrice([0]));
 
-function createReversedArray() {
-  const arg = Array.from(arguments)
-  return arg.toReversed(arguments)
+// function createReversedArray() {
+//   const arg = Array.from(arguments)
+//   return arg.toReversed(arguments)
 
-}
-// console.log(createReversedArray(412, 371, 94, 63, 176));
+// }
+// // console.log(createReversedArray(412, 371, 94, 63, 176));
 
-function calculateTax(amount, taxRate = 0.2) { 
- return amount * taxRate
+// function calculateTax(amount, taxRate = 0.2) {
+//  return amount * taxRate
 
-}
-// console.log(calculateTax(100, 0.1));
+// }
+// // console.log(calculateTax(100, 0.1));
 
-function fillArray(min, max) {
-    let arr = [];
-    for (let i = min; i <= max; i += 2) {
-      return arr.push(i)
-    }
-}
+// function fillArray(min, max) {
+//     let arr = [];
+//     for (let i = min; i <= max; i += 2) {
+//       return arr.push(i)
+//     }
+// }
 // console.log(fillArray(2, 10));
 
 // const apartment = {
@@ -815,3 +815,157 @@ function fillArray(min, max) {
 //   .map(book => book.author)
 //   .toSorted()
 // console.log(names);
+
+
+// function changeColor(color) {
+//   this.color = color;
+// }
+// const hat = {
+//     color: "black"
+// }
+// const sweater = {
+//     color: "blue"
+// }
+// changeColor.call(hat, "red")
+//   console.log(hat);
+  
+
+
+// const library = {
+// 	books: 1923,
+// 	logBookCount() {
+// 		console.log(this.books);
+// 	}
+// };
+
+// const showBooks = library.logBookCount.bind({ books: 724 });
+
+// showBooks();
+// library.logBookCount();
+
+
+// class Car {
+//   #brand;
+//     model;
+//     price;
+//   constructor(params) {
+//     this.#brand = params.brand;
+//     this.model = params.model;
+//     this.price = params.price;
+//   }
+
+//   getPrice() {
+//     return this.price;
+//   }
+
+//   changePrice(newPrice) {
+//     this.price = newPrice;
+//   }
+// getBrand() {
+//   return this.#brand;
+// }
+//   changeBrand(newBrand) {
+//     this.#brand = newBrand
+//   }
+// }
+// console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }));
+// console.log(new Car({ brand: "bmw", model: "X5", price: 58900 }));
+
+
+// class Car {
+//   #price;
+// static maxPrice = 50000
+//   constructor(params) {
+//     this.#price = params.price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (newPrice <= Car.maxPrice) {
+//       this.#price = newPrice;
+//     }
+    
+//   }
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+
+// class Car {
+//   static #maxPrice = 50000;
+// static checkPrice(price) {
+//   if (price > Car.#maxPrice) {
+//     return `Error! Price exceeds the maximum`
+//   }
+//   return `Success! Price is within acceptable limits`
+  
+// }
+//   constructor(params) {
+//     this.price = params.price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+
+
+// class User {
+//     email;
+  
+//     constructor(email) {
+//       this.email = email;
+//     }
+  
+//     get email() {
+//       return this.email;
+//     }
+  
+//     set email(newEmail) {
+//       this.email = newEmail;
+//     }
+//   }
+//   class Admin extends User {
+//     static role = {
+//       BASIC: "basic",
+//       SUPERUSER: "superuser",
+     
+//     };
+  
+  //   constructor(params) {
+  //     super(params.email);
+  //       this.access = params.access;
+  //       this.blacklistedEmails = []
+  //   }
+  //   blacklist(email) {
+  //     this.blacklistedEmails.push(email);
+  //   }
+  //   isBlacklisted(email) {
+  //     return this.blacklistedEmails.includes(email);
+  //   }
+  // }
+  
+  // const mango = new Admin({
+  //   email: "mango@mail.com",
+  //   access: Admin.role.SUPERUSER,
+  // });
+  
+  // console.log(mango.email); // "mango@mail.com"
+  // console.log(mango.access); // "superuser"
+  
+  // mango.blacklist("poly@mail.com");
+  // console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+  // console.log(mango.isBlacklisted("mango@mail.com")); // false
+  // console.log(mango.isBlacklisted("poly@mail.com")); // true
